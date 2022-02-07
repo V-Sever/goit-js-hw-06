@@ -12,6 +12,7 @@ function onBlur(event) {
 
   if (inputLength !== correctLength) {
     inputRef.classList.add('invalid');
+    inputRef.classList.remove('valid');
   } else {
     inputRef.classList.remove('invalid');
     inputRef.classList.add('valid');

@@ -24,12 +24,12 @@ function onInput(event) {
   // console.log(numberOfElmnts);
 }
 
+let width = 30;
+let height = 30;
+
 function createBoxes(amount) {
-  collectionRef.innerHTML = '';
   amount = numberOfElmnts;
   const elmntsCollection = [];
-  let width = 30;
-  let height = 30;
 
   for (let i = 1; i <= amount; i += 1) {
     const newElmnt = document.createElement('div');
@@ -48,4 +48,6 @@ function createBoxes(amount) {
 
 function destroyBoxes() {
   collectionRef.innerHTML = '';
+  width = 30;
+  height = 30;
 }
